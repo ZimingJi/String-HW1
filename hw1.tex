@@ -1,0 +1,64 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{setspace}
+\usepackage{titling}
+\onehalfspacing
+\usepackage{color}
+\usepackage{colortbl}
+\usepackage{fancyvrb}
+\usepackage{graphicx}
+
+\usepackage[bf,margin=20pt,format=hang,font={small,stretch=1.1}]{caption}
+\usepackage{tikz}
+\usetikzlibrary{math}
+\usepackage{amsmath,amssymb,bbm}
+\makeatletter\let\over\@@over\makeatother    %To suppress the \over warning
+\usepackage{hyperref}
+\usepackage{showkeys}
+\usepackage{subcaption}
+\usepackage{diagbox}
+
+\newcommand\TL{\hfil$\displaystyle{##}$}
+\newcommand\TR{$\displaystyle{{}##}$\hfil}
+\newcommand\TC{\hfil$\displaystyle{##}$\hfil}
+\newcommand\TT{\hbox{##}}
+\def\seqalign#1#2{\vcenter{\openup1\jot
+  \halign{\strut #1\cr #2 \cr}}}
+\def\lbldef#1#2{\expandafter\gdef\csname #1\endcsname {#2}}
+\newcommand{\eqn}[3][]{\lbldef{#2}{(\ref{#2})}%
+\begin{equation} \eqalign{#3} \label{#2} \end{equation}}
+\def\eqalign#1{\vcenter{\openup1\jot
+    \halign{\strut\span\TL & \span\TR\cr #1 \cr
+   }}}
+\def\eno#1{(\ref{#1})}
+\def\href#1#2{#2}
+\def\mop#1{\mathop{\rm #1}\nolimits}
+\def\sgn{\mop{sgn}}
+\def\mod#1{\;(\mop{mod}#1)}
+\def\tr{\mop{tr}}
+\def\stab{\mop{stab}}
+\def\orb{\mop{orb}}
+\def\upket{|\!\uparrow\rangle}
+\def\downket{|\!\downarrow\rangle}
+\def\lsim{\mathrel{\mathstrut\smash{\ooalign{\raise2.5pt\hbox{$<$}\cr\lower2.5pt\hbox{$\sim$}}}}}
+\def\gsim{\mathrel{\mathstrut\smash{\ooalign{\raise2.5pt\hbox{$>$}\cr\lower2.5pt\hbox{$\sim$}}}}}
+
+ 
+\begin{document}
+ 
+\title{Homework 1}
+\author{Ziming Ji\\ 
+PHY 539: Introduction to String Theory}
+ 
+\maketitle
+ 
+\begin{section}{Problem 1}
+
+\eqn{1}{
+-det g_{\alpha\beta} = 1-\partial_0 X^i \partial_0 X_i+\partial_1 X^i \partial_1 X_i+\partial_2 X^i \partial_2 X_i
+}
+
+\end{section}
+
+
+\end{document}

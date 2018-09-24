@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[     21448,        649]
-NotebookOptionsPosition[     20021,        615]
-NotebookOutlinePosition[     20377,        631]
-CellTagsIndexPosition[     20334,        628]
+NotebookDataLength[     22391,        677]
+NotebookOptionsPosition[     20741,        639]
+NotebookOutlinePosition[     21097,        655]
+CellTagsIndexPosition[     21054,        652]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -611,6 +611,30 @@ Cell[BoxData[
  CellChangeTimes->{{3.7466404122712297`*^9, 3.7466404157547274`*^9}, 
    3.7466404529853745`*^9},
  CellLabel->"Out[75]=",ExpressionUUID->"fb6789f6-114a-45ea-8501-6ec019850ecf"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Integrate", "[", 
+  RowBox[{
+   RowBox[{
+    SuperscriptBox["A", "2"], 
+    RowBox[{"(", 
+     RowBox[{"1", "-", 
+      RowBox[{"Cos", "[", 
+       RowBox[{"2", "x"}], "]"}]}], ")"}]}], ",", 
+   RowBox[{"{", 
+    RowBox[{"x", ",", "0", ",", 
+     RowBox[{"2", "\[Pi]"}]}], "}"}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.746808701929735*^9, 3.7468087256054616`*^9}},
+ CellLabel->"In[76]:=",ExpressionUUID->"48bd2ef2-2b10-4b49-9b4c-2e1e0959e86e"],
+
+Cell[BoxData[
+ RowBox[{"2", " ", 
+  SuperscriptBox["A", "2"], " ", "\[Pi]"}]], "Output",
+ CellChangeTimes->{3.7468087263437366`*^9},
+ CellLabel->"Out[76]=",ExpressionUUID->"4af4a547-166e-40c8-89dd-abcfe0719294"]
 }, Open  ]]
 },
 WindowSize->{759, 813},
@@ -650,6 +674,10 @@ Cell[17931, 548, 1086, 31, 32, "Output",ExpressionUUID->"06c30be8-a0cc-4769-a37a
 Cell[CellGroupData[{
 Cell[19054, 584, 351, 9, 53, "Input",ExpressionUUID->"a7f4b087-6412-45e9-a746-a776124d8eb0"],
 Cell[19408, 595, 597, 17, 51, "Output",ExpressionUUID->"fb6789f6-114a-45ea-8501-6ec019850ecf"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[20042, 617, 469, 13, 47, "Input",ExpressionUUID->"48bd2ef2-2b10-4b49-9b4c-2e1e0959e86e"],
+Cell[20514, 632, 211, 4, 32, "Output",ExpressionUUID->"4af4a547-166e-40c8-89dd-abcfe0719294"]
 }, Open  ]]
 }
 ]

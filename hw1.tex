@@ -139,12 +139,33 @@ The perturbation process goes as follows: Using the static gauge $\tau=X^0, \sig
 \eqn{StaticNambu}{
 L_{string}&=-\mathcal{T}\int^L_0 d\sigma \sqrt{-det g_{\alpha\beta}}\cr
     &=-\mathcal{T}\int^L_0 d\sigma \sqrt{1-\partial_0 X^i \partial_0 X_i+\partial_1 X^i \partial_1 X_i+\mathcal{O}(\partial_\alpha X^i)^4}\cr
-    &=-\mathcal{T}L-\frac{\mathcal{T}}{2}\int^L_0 d\sigma (-\partial_0 X^i \partial_0 X_i+\partial_1 X^i \partial_1 X_i+\mathcal{O}(\partial_\alpha X^i)^4)
+    &=-\mathcal{T}L-\frac{\mathcal{T}}{2}\int^L_0 d\sigma (-\partial_0 X^i \partial_0 X_i+\partial_1 X^i \partial_1 X_i+\mathcal{O}(\partial_\alpha X^i)^4).
+}.
+Then the Hamiltonian is:
+\eqn{Hamiltonian}{
+H=\mathcal{T} (\dot{X}^i)^2 -L_{string}=\mathcal{T}L+\frac{2\pi}{L}\sum^\infty_{-\infty}(a_{-n}^i a_n^i + \widetilde{a}_{-n}^i \widetilde{a}_n^i).
 }
-
+Now the remaining transverse modes are all of positive signature and can be quantized as usual harmonic oscillators. This is to say the spectrum is:
+\eqn{Spectrum1}{
+E=\mathcal{T}L+\frac{2\pi}{L}(N+\widetilde{N}).
+}
+First three eigenstates are $(N+\widetilde{N})=0$ (degeneracy 1), $(N+\widetilde{N})=1$ (degeneracy 2) and $(N+\widetilde{N})=2$ (degeneracy 3).
 
 \end{paragraph}
 
+\begin{paragraph}{b)}
+(Assume that $X^1$ is a "pure winding" direction, so we do not consider $p^1$.)To derive the exact spectrum, we adopt the canonical quantization and consider all the constraints. 
+We first derive the modes in $X^1$ direction. In this so-called "winding sector"$\alpha_0^1=-\widetilde{\alpha}^1_0$, we have $X^1=X^1_L+X^1_R=2\widetilde{\alpha}_0^1\sqrt{\frac{\alpha'}{2}}\sigma$ (no momentum in this direction). Imposing the boundary condition, we have $\sqrt{\frac{\alpha'}{2}}\widetilde{\alpha}^1_0=\frac{L}{4\pi}$. Then the next convenient thing to do is to set $X^0=2\alpha^0_0\tau\sqrt{\frac{\alpha'}{2}}$ and we have $E=\sqrt{\frac{\alpha'}{2}}\widetilde{\alpha}^0_0$. At last we impose the constraints:
+\eqn{Constraint}{
+L_0=\widetilde{L}_0&=a \cr
+-\frac{(\alpha^0_0)^2}{2}+\frac{(\alpha^1_0)^2}{2}+\sum^{D-1}_{n=2}\alpha^i_{-n} \alpha^i_n &=a \cr
+-\frac{E^2}{4}\alpha'+\frac{L^2}{16\pi^2 \alpha'}+N-a&=0.
+} 
+The constant being $\alpha'=\frac{1}{2\pi \mathcal{T}}$, we finally have:
+\eqn{ExactSpectrum}{
+E=\sqrt{(\mathcal{T}L)^2+8\pi \mathcal{T}(N-a)}.
+}
+\end{paragraph}
 
 \end{section}
 

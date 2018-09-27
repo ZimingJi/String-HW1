@@ -57,20 +57,20 @@ PHY 539: Introduction to String Theory}
 \begin{section}{Problem 1}
 
 Adopting the static gauge, we have:
-\eqn{1}{
--det g_{\alpha\beta} = 1-\partial_0 X^i \partial_0 X_i+\partial_1 X^i \partial_1 X_i+\partial_2 X^i \partial_2 X_i
+\eqn{Det}{
+-det g_{\alpha\beta} = 1-\partial_0 X^i \partial_0 X_i+\partial_1 X^i \partial_1 X_i+\partial_2 X^i \partial_2 X_i.
 }
 Define $g'_{\alpha\beta}=\partial_\alpha X^i \partial_\beta X_i$, then 
-\eqn{2}{
--det g_{\alpha\beta} = 1+g'_{\alpha\beta} \eta^{\alpha\beta}
+\eqn{DetShort}{
+-det g_{\alpha\beta} = 1+g'_{\alpha\beta} \eta^{\alpha\beta}.
 }
 Consider derivatives of $X^i(\sigma^0,\sigma^1,\sigma^2)$ as small quantities and expand action to the fourth order of them:
-\eqn{3}{
-S=-\mathcal{T}\int d^3 \sigma (1+\frac{1}{2}g'_{\alpha\beta} \eta^{\alpha\beta}-\frac{1}{8}(g'_{\gamma\delta} \eta^{\gamma\delta})^2)
+\eqn{Expansion}{
+S=-\mathcal{T}\int d^3 \sigma (1+\frac{1}{2}g'_{\alpha\beta} \eta^{\alpha\beta}-\frac{1}{8}(g'_{\gamma\delta} \eta^{\gamma\delta})^2+\mathcal{O}(\partial_i X^j)^6).
 }
 Contract the stress-energy tensor with $\eta^{\alpha\beta}$, we have $T_{\alpha\beta}\eta^{\alpha\beta}=-\frac{1}{2}g'_{\alpha\beta} \eta^{\alpha\beta}$. So the fourth order term is:
-\eqn{4}{
--\frac{1}{8}(g'_{\alpha\beta} \eta^{\alpha\beta})^2=-\frac{1}{2}(T^{\alpha}_\beta)^2
+\eqn{Fourth}{
+-\frac{1}{8}(g'_{\alpha\beta} \eta^{\alpha\beta})^2=-\frac{1}{2}(T^{\alpha}_\beta)^2.
 }
 
 
@@ -79,38 +79,38 @@ Contract the stress-energy tensor with $\eta^{\alpha\beta}$, we have $T_{\alpha\
 \begin{section} {Problem 2}
 \begin{paragraph}{a)}
 This is the same as two straight open strings that their endpoints coincide. Adopting the open string solution:
-\eqn{5}{
-X^0=A\tau,   X^1=A \cos\tau \cos\sigma,   X^2=A \sin\tau \cos\sigma 
+\eqn{FoldSol}{
+X^0=A\tau,   X^1=A \cos\tau \cos\sigma,   X^2=A \sin\tau \cos\sigma ,
 }
 but let $\sigma$ runs from $0$ to $2\pi$.
 \end{paragraph}
 
 \begin{paragraph}{b)}
 At any endpoint, for example $\sigma=0$, we have:
-\eqn{6}{
-\sqrt{(\frac{dX^1}{dX^0})^2+(\frac{dX^2}{dX^0})^2}=\sqrt{(-\sin\tau)^2+(\cos\tau)^2}=1
+\eqn{FoldSpeed}{
+\sqrt{(\frac{dX^1}{dX^0})^2+(\frac{dX^2}{dX^0})^2}=\sqrt{(-\sin\tau)^2+(\cos\tau)^2}=1.
 }
 So it moves at the speed of light.
 \end{paragraph}
 
 \begin{paragraph}{c)}
 Energy can be obtained by:
-\eqn{7}{
-E=P^0=\mathcal{T}\int_{0}^{2\pi}d\sigma\frac{dX^0}{d\tau}=2\pi A\mathcal{T}
+\eqn{FoldEnergy}{
+E=P^0=\mathcal{T}\int_{0}^{2\pi}d\sigma\frac{dX^0}{d\tau}=2\pi A\mathcal{T}.
 }
 While angular momentum is:
-\eqn{8}{
-J=\mathcal{T}\int_{0}^{2\pi}d\sigma(X^1 \frac{dX^2}{d\tau}-X^2 \frac{dX^1}{d\tau})=\pi A^2 \mathcal{T}
+\eqn{FoldAngular}{
+J=\mathcal{T}\int_{0}^{2\pi}d\sigma(X^1 \frac{dX^2}{d\tau}-X^2 \frac{dX^1}{d\tau})=\pi A^2 \mathcal{T}.
 }
 So we have $J=\frac{1}{4\pi T}E^2$. The slope is half of the open string case.
 \end{paragraph}
 
 \begin{paragraph}{d)}
 One rotating period is $2\pi$. So we have:
-\eqn{9}{
-2\pi \hbar n=\mathcal{T}\int_{0}^{2\pi}d\sigma \int_{0}^{2\pi}d\tau (-\partial_\tau X^\mu \partial_\tau X_\mu+\partial_\sigma X^\mu \partial_\sigma X_\mu)=4\pi^2 A^2\mathcal{T}
+\eqn{SemiQuanti1}{
+2\pi \hbar n=|-\frac{\mathcal{T}}{2}\int_{0}^{2\pi}d\sigma \int_{0}^{2\pi}d\tau (-\partial_\tau X^\mu \partial_\tau X_\mu+\partial_\sigma X^\mu \partial_\sigma X_\mu)|=2\pi^2 A^2\mathcal{T}.
 }
-So the angular momentum is $J=\pi A^2 \mathcal{T}=\frac{1}{2} \hbar n$.
+So the angular momentum is $J=\pi A^2 \mathcal{T}=n\hbar$.
 \end{paragraph}
 
 \end{section}
@@ -118,13 +118,33 @@ So the angular momentum is $J=\pi A^2 \mathcal{T}=\frac{1}{2} \hbar n$.
 \begin{section} {Problem 3}
 
 Let $\sigma$ be from $0$ to $2\pi$, a pulsating solution is:
-\eqn{10}{
-X^0=A\tau,   X^1=A \cos\tau \cos\sigma,   X^2=A \cos\tau \sin\sigma 
+\eqn{PulsatingSol}{
+X^0=R\tau,   X^1=R \cos\tau \cos\sigma,   X^2=R \cos\tau \sin\sigma .
 }
-Using the semi-classical quantization condition, we have:
-\eqn{11}{
-2\pi \hbar n=\mathcal{T}\int_{0}^{2\pi}d\sigma \int_{0}^{2\pi}d\tau (-\partial_\tau X^\mu \partial_\tau X_\mu+\partial_\sigma X^\mu \partial_\sigma X_\mu)=4\pi^2 A^2\mathcal{T}
+Energy of this string is:
+\eqn{PulsatingEnergy}{
+E=P^0=\mathcal{T}\int_{0}^{2\pi}d\sigma\frac{dX^0}{d\tau}=2\pi R\mathcal{T}.
 }
+Using the semi-classical quantization condition, we have(one period is $\pi$):
+\eqn{SemiQuanti2}{
+2\pi \hbar n=|-\frac{\mathcal{T}}{2}\int_{0}^{2\pi}d\sigma \int_{0}^{\pi}d\tau (-\partial_\tau X^\mu \partial_\tau X_\mu+\partial_\sigma X^\mu \partial_\sigma X_\mu)|=\pi^2 R^2\mathcal{T}.
+}
+Thus, $E=\sqrt{2\pi n \hbar \mathcal{T}}$.
+\end{section}
+
+\begin{section} {Problem 4}
+\begin{paragraph} {a)}
+
+The perturbation process goes as follows: Using the static gauge $\tau=X^0, \sigma=X^1$ for Nambu-Goto action, and expand the squared root; By treating the derivatives as small quantities, we can approximate the original action by just the first two terms. In this manner, we obtain an approximate quadratic action but without any constraints:
+\eqn{StaticNambu}{
+L_{string}&=-\mathcal{T}\int^L_0 d\sigma \sqrt{-det g_{\alpha\beta}}\cr
+    &=-\mathcal{T}\int^L_0 d\sigma \sqrt{1-\partial_0 X^i \partial_0 X_i+\partial_1 X^i \partial_1 X_i+\mathcal{O}(\partial_\alpha X^i)^4}\cr
+    &=-\mathcal{T}L-\frac{\mathcal{T}}{2}\int^L_0 d\sigma (-\partial_0 X^i \partial_0 X_i+\partial_1 X^i \partial_1 X_i+\mathcal{O}(\partial_\alpha X^i)^4)
+}
+
+
+\end{paragraph}
+
 
 \end{section}
 
